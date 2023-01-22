@@ -1,0 +1,38 @@
+.logo{
+	width: 150px;
+}
+
+
+
+.wrapper {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.flex_wrap {
+	display: flex;
+}
+
+.navbar{
+	display: flex;
+	background: #1e1f26;
+	padding: 10px;
+	border-bottom: 3px solid #E31B6D;
+}
+
+.nav-links {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.links {
+  padding: 10px;
+  
+}
+
+/* li{
+	textDecoration: "none";
+} */
