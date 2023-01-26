@@ -1,23 +1,24 @@
 import React from "react";
+// import { ReactComponent as Logo } from "../../logo.svg";
+// import logo from "../../logo.svg"
 import { Link } from "react-router-dom";
+import pic from "../../pic.png";
 import "./nav.css";
 
 const Nav = () => {
 
   return (
-    <div className="wrapper flex-wrap">
-      <div>
-        <div>
-          {/* <Link to="/">
-            <div>
-              <img src={logo} />
-            </div>
-          </Link> */}
-        </div>
+    <nav>
+      <div style={{display: "flex"}} className="wrapper flex-cont">
+        <span>
+          <Link to="/">            
+							<img src={pic} className="picLogo"/>
+          </Link>
+        </span>
         <div>
           <ul className="nav-links">
             <Link to="../components/AboutMe">
-              <li className="links">About me</li>
+              <li className="links">AboutMe</li>
             </Link>
             <Link to="../components/Projects">
               <li className="links">Projects</li>
@@ -27,8 +28,8 @@ const Nav = () => {
             </Link>
           </ul>
         </div>
-      </div>
-    </div>
+				</div>
+    </nav>
   );
 };
 
