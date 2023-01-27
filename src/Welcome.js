@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import ScrollBtn from "./ScrollBtn";
 
 
 const Welcome = () => {
@@ -8,15 +9,7 @@ const Welcome = () => {
 		<div>
 		   <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-
-        {/* <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-       
-        </a> */}
+				<ScrollBtn style={{position: "absolute", right: "30px",  textAlign: "center"}}/>
       </header>
 		</div>
 	)
