@@ -7,19 +7,9 @@
 	align-items: center;
 }
 
-.wrapper {
-	width: 100%;
-	max-width: 1200px;
-	margin: 0 auto;
-}
-
-.flex_wrap {
-	display: flex;
-}
-
 nav{
 	background: #1c1c1c;
-	border-bottom: 1px solid #E31B6D;
+	border-bottom: 2px solid #E31B6D;
 }
 
 .nav-links {

@@ -15,6 +15,19 @@ body {
 	-webkit-tap-highlight-color: transparent;
 }
 
+
+.wrapper {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.flex_wrap {
+	display: flex;
+}
+
+
+
 .App {
   text-align: center;
 }
@@ -112,41 +125,5 @@ a,  u{
   -o-transition: background-color  0.8s ease-out;
 }
 
-/* .btn:hover:before {
-  transition-delay: 0s;
-} */
 
-/* .btn:hover:after {
-  background: #1c1c1c;
-  transition-delay: .05s;
-} */
-
-/* From Top */
-
-/* .from-top:before, 
-.from-top:after {
-  left: 0;
-  height: 0;
-  width: 100%;
-}
-
-
-
-.from-top:before {
-  bottom: 0;  
-  border: 1px solid #E31B6D;
-  border-top: 0;
-  border-bottom: 0;
-}
-
-.from-top:after {
-  top: 0;
-  height: 0;
-}
-
-.from-top:hover:before,
-.from-top:hover:after {
-  height: 100%;
-}
- */
 

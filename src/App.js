@@ -4,6 +4,8 @@ import { AboutMe, Projects, Blog } from "./components/export";
 import Nav from "./components/navComp/Nav";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
+import "./components/AboutMe.css";
+import photo from "./components/images/andrea_photo.png";
 
 function App() {
   return (
@@ -19,6 +21,9 @@ function App() {
             <Route path="./components/Blog" element={<Blog />} />
           </Routes>
         </div>
+        <section>
+          <AboutMe img={photo} />
+        </section>
       </div>
     </Router>
   );
