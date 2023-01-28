@@ -1,10 +1,11 @@
 import React from "react";
-import "../App.css";
+
+
 
 const AboutMe = ({ img }) => {
   return (
-    <article>
-      <div className="wrapper about_head">
+    <article className="wrapper ">
+      <div className="about_head">
         <h2>About me</h2>
       </div>
       <section className="flex_wrap section">

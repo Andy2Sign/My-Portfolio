@@ -1,0 +1,33 @@
+.mission_article{
+	margin-top: 180px;
+}
+
+.mission_box-title{
+background-color: #f5f5f5;
+/* margin-top: 30px; */
+}
+
+/* .wallpaper{
+	background: url(./images/wallPaper.jpeg) 50% 50% / cover;
+	z-index: -2;
+	padding: 10px;
+} */
+
+.span-box_img{
+	width: 800px;
+}
+
+.handleContent{
+	justify-content: space-between;
+	align-items: center;
+}
+
+.img-mission{
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+}
+
+.dis_flex{
+	display: flex;
+}

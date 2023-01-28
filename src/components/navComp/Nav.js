@@ -21,6 +21,9 @@ const Nav = () => {
             <Link to="../components/AboutMe">
               <li className="links">AboutMe</li>
             </Link>
+						<Link to="../components/Mission">
+              <li className="links">Mission</li>
+            </Link>
             <Link to="../components/Projects">
               <li className="links">Projects</li>
             </Link>

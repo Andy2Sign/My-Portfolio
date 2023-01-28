@@ -1,6 +1,10 @@
+article{
+	margin-bottom: 20px;
+}
+
 .about_head{
 	text-align: center;
-	padding: 10px;
+	background: #f1f1f1;
 }
 
 .section{
@@ -51,3 +55,5 @@ img {
 	display: block;
 	height: auto;
 }
+
+

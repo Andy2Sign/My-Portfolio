@@ -1,11 +1,12 @@
 import React from "react";
+import photo from "./components/images/andrea_photo.png";
+import picture from "./components/images/FinTech.jpeg";
 import Welcome from "./Welcome";
-import { AboutMe, Projects, Blog } from "./components/export";
-import Nav from "./components/navComp/Nav";
+import { Nav, AboutMe, Mission, Projects, Blog } from "./components/export";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import "./components/AboutMe.css";
-import photo from "./components/images/andrea_photo.png";
+import "./components/Mission.css";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Nav />
           <Routes>
             <Route path="./components/AboutMe" element={<AboutMe />} />
+						<Route path="./components/Mission" element={<Mission />} />
             <Route path="./components/Projects" element={<Projects />} />
             <Route path="./components/Blog" element={<Blog />} />
           </Routes>
@@ -24,6 +26,9 @@ function App() {
         <section>
           <AboutMe img={photo} />
         </section>
+				<section>
+					<Mission img={picture}/>
+				</section>
       </div>
     </Router>
   );
