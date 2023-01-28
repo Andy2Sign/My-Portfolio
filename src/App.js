@@ -9,6 +9,7 @@ import "./components/AboutMe.css";
 import "./components/Mission.css";
 
 function App() {
+	
   return (
     <Router>
       <div className="App">
@@ -17,15 +18,15 @@ function App() {
         <div className="main-container">
           <Nav />
           <Routes>
-            <Route path="./components/AboutMe" element={<AboutMe />} />
+            <Route  path="/" element={<AboutMe img={photo}/>} />
 						<Route path="./components/Mission" element={<Mission />} />
             <Route path="./components/Projects" element={<Projects />} />
             <Route path="./components/Blog" element={<Blog />} />
           </Routes>
         </div>
-        <section>
-          <AboutMe img={photo} />
-        </section>
+        {/* <section>
+				<AboutMe img={photo}/>
+        </section> */}
 				<section>
 					<Mission img={picture}/>
 				</section>

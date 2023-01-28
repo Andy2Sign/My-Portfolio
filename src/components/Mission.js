@@ -7,12 +7,12 @@ const Mission = ({img}) => {
       <div className=" mission_box-title">
         <h2>Mission</h2>
       </div>
-      <div className="wallpaper dis_flex handleContent">
+      <div className="flex handleContent">
         <span className="span-box_img">
 					<img src={img} className="img-mission"/>
 				</span>
 
-        <div>
+        <div className="miss_descr">
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat
             sint facilis temporibus doloremque? Totam vero corrupti placeat

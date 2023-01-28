@@ -1,10 +1,11 @@
+// import { forwardRef } from "react";
 import React from "react";
 
 
 
 const AboutMe = ({ img }) => {
   return (
-    <article className="wrapper ">
+    <article  className="wrapper ">
       <div className="about_head">
         <h2>About me</h2>
       </div>

@@ -12,13 +12,13 @@ const Nav = () => {
     <nav>
       <div style={{display: "flex"}} className="wrapper flex-cont">
         <span>
-          <Link to="/">            
+          <Link >            
 							<img src={pic} className="picLogo"/>
           </Link>
         </span>
         <div>
           <ul className="nav-links">
-            <Link to="../components/AboutMe">
+            <Link to="/">
               <li className="links">AboutMe</li>
             </Link>
 						<Link to="../components/Mission">

@@ -14,12 +14,14 @@ background-color: #f5f5f5;
 } */
 
 .span-box_img{
-	width: 800px;
+	width: 500px;
+	padding: 10px;
 }
 
 .handleContent{
 	justify-content: space-between;
 	align-items: center;
+	padding: 10px;
 }
 
 .img-mission{
@@ -28,6 +30,12 @@ background-color: #f5f5f5;
 	border-radius: 10px;
 }
 
-.dis_flex{
+.flex{
 	display: flex;
+}
+
+.miss_descr{
+	width: 600px;
+	padding: 10px;
+	font-size: 20px;
 }
