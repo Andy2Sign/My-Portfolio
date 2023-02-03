@@ -27,12 +27,12 @@ function App() {
 
         <div className="main-container">
           <Nav ref={ref} />
-          <Routes>
+          {/* <Routes>
             <Route path="/" element={<AboutMe img={photo}  />} />
 						<Route path="./components/pages/Mission" element={<Mission />} />
             <Route path="./components/pages/Projects" element={<Services />} />
             <Route path="./components/pages/Blog" element={<Blog />} />
-          </Routes>
+          </Routes> */}
         </div>
         {/* <section>
           <AboutMe img={photo} />
