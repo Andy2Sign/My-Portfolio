@@ -74,56 +74,30 @@ a,  u{
 
 /*Button on  Welcom*/
 
-.sec-btn{
-	/* margin-top: 10px;
-	margin-bottom: 10px;*/ 
+.sec-btn{ 
 	position: absolute;
-	/* margin-bottom: 20px; */
-	/* right: 30px; */
 	top: 20px;
-	right: 50%;
+	right: 45%;
+	border: none;
 }
 
 .btn {    
   position: relative; 
-  /* padding: 10px; */
-  /* padding: 1.4rem 4.2rem;
-  padding-right: 3.1rem; */
   font-size: 1.4rem;
-  /* color: var(--inv); */
-  /* letter-spacing: 1.1rem; */
   text-transform:inherit; 
   cursor: pointer;
   user-select: none;
-  border-radius: 20px;
   width: 150px;
 	height: 40px;
   background-color: #1c1c1c;
   color: whitesmoke;
-  /* text-align: center; */
-  /* font-size: 22px; */
-  /* font-weight: bolder; */
-	/* border: 0.5px solid whitesmoke; */
 	border: none;
 }
 
-/* .btn:before, .btn:after {
-  content: '';
-  position: absolute; 
-  transition: inherit;
-  z-index: -1;
-} */
-
-
 .btn:hover {
-  color: #1c1c1c  ;
-  /* transition-delay: .1s; */
-	background: #E31B6D;
-	border: 1px solid whitesmoke;
-  transition: border 0.8s ease-out;
-	-webkit-transition: background-color  0.8s ease-out;
-  -moz-transition: background-color  0.8s ease-out;
-  -o-transition: background-color  0.8s ease-out;
+	border-bottom: 1px solid #E31B6D;
+	transform: scale(1.3);
+	transition: all .2s linear;
 }
 
 

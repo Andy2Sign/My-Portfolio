@@ -1,9 +1,10 @@
 import React from "react";
+import "./Mission.css"
 
 
 const Mission = ({img}) => {
   return (
-    <article className="wrapper mission_article">
+    <article id="Mission" className="wrapper mission_article">
       <div className=" mission_box-title">
         <h2>Mission</h2>
       </div>

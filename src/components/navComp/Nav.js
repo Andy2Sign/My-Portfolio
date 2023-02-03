@@ -1,7 +1,7 @@
-import React,{forwardRef, useState, useEffect} from "react";
+import React,{forwardRef} from "react";
 // import { ReactComponent as Logo } from "../../logo.svg";
 // import logo from "../../logo.svg"
-// import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import pic from "../../pic.png";
 import "./nav.css";
 import "../../App.css";
@@ -12,24 +12,24 @@ const Nav = ({props}, ref) => {
     <nav ref={ref} >
       <div style={{display: "flex"}} className="wrapper flex-cont">
         <span>
-          {/* <Link >             */}
+          <Link to="/" spy={true} smooth={true}>            
 							<img src={pic} className="picLogo"/>
-          {/* </Link> */}
+          </Link>
         </span>
         <div>
           <ul className="nav-links">
-            {/* <Link to="/"> */}
+            <Link to="AboutMe" spy={true} smooth={true}>
               <li className="links">AboutMe</li>
-            {/* </Link> */}
-						{/* <Link to="../components/Mission"> */}
+            </Link> 
+						<Link to="Mission" spy={true} smooth={true}>
               <li className="links">Mission</li>
-            {/* </Link> */}
-            {/* <Link to="../components/Projects"> */}
-              <li className="links">Projects</li>
-            {/* </Link> */}
-            {/* <Link to="../components/Blog"> */}
+            </Link>
+             <Link to="Services">
+              <li className="links">Services</li>
+             </Link> 
+             <Link to="Blog">
               <li className="links">Blog</li>
-            {/* </Link> */}
+            </Link> 
           </ul>
         </div>
 				</div>

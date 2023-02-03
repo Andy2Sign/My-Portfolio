@@ -1,11 +1,12 @@
 // import { forwardRef } from "react";
 import React from "react";
+import "./AboutMe.css"
 
 
 
 const AboutMe = ({ img }) => {
   return (
-    <article   className="wrapper ">
+    <article id="AboutMe"  className="wrapper ">
       <div className="about_head">
         <h2>About me</h2>
       </div>

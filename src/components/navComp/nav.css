@@ -28,3 +28,13 @@ nav{
 	font-weight: lighter;
 }
 
+
+.links:hover {
+	border-color: #E31B6D;
+	color: #E31B6D;
+	cursor: default;
+	border-bottom: 1px solid whitesmoke;
+	transform: scale(1.1);
+	transition: all .2s linear;
+}
+
