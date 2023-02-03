@@ -71,6 +71,7 @@ a,  u{
   }
 }
 
+
 /*Button on  Welcom*/
 
 .sec-btn{
@@ -80,7 +81,7 @@ a,  u{
 	/* margin-bottom: 20px; */
 	/* right: 30px; */
 	top: 20px;
-
+	right: 50%;
 }
 
 .btn {    

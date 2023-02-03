@@ -1,8 +1,8 @@
 // import {useRef} from "react";
 
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
-const ScrollBtn = () => {
+const ScrollBtn = ({handleScroll}) => {
 	// const ref = useRef(null);
   // const scrollClick = () => {
   //   ref.current?.scrollClick({ behavior: "smooth" });
@@ -10,11 +10,11 @@ const ScrollBtn = () => {
   // };
   return (
     <section className="sec-btn">
-			<Link to="../AboutMe">
-      <button className="btn">
+			{/* <Link to="../AboutMe"> */}
+      <button onClick={handleScroll} className="btn">
         Click me
       </button>
-			</Link>
+			{/* </Link> */}
     </section>
   );
 };
