@@ -34,9 +34,9 @@ function App() {
             <Route path="./components/pages/Blog" element={<Blog />} />
           </Routes> */}
         </div>
-        {/* <section>
+        <section>
           <AboutMe img={photo} />
-        </section> */}
+        </section>
         <section>
           <Mission img={picture} />
         </section>

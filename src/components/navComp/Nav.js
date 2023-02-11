@@ -1,4 +1,4 @@
-import React,{forwardRef} from "react";
+import React,{forwardRef, useState} from "react";
 // import { ReactComponent as Logo } from "../../logo.svg";
 // import logo from "../../logo.svg"
 import { Link } from "react-scroll";
@@ -7,7 +7,13 @@ import "./nav.css";
 import "../../App.css";
 
 const Nav = ({props}, ref) => {
+    const [fix, setFix] = useState(false);
 
+		const setFixed = () => {
+			if(window.scrollY >= 390){
+				setFix(true)
+			}
+		}
   return (
     <nav ref={ref} >
       <div style={{display: "flex"}} className="wrapper flex-cont">
