@@ -1,4 +1,4 @@
-import React,{forwardRef, useState} from "react";
+import React,{forwardRef, useState, useEffect} from "react";
 // import { ReactComponent as Logo } from "../../logo.svg";
 // import logo from "../../logo.svg"
 import { Link } from "react-scroll";
@@ -7,15 +7,27 @@ import "./nav.css";
 import "../../App.css";
 
 const Nav = ({props}, ref) => {
-    const [fix, setFix] = useState(false);
+   
 
-		const setFixed = () => {
-			if(window.scrollY >= 390){
-				setFix(true)
-			}
+	useEffect(() => {
+		Events.scrollEvent.register('begin', function () {
+      console.log("begin", arguments);
+    });
+
+    Events.scrollEvent.register('end', function () {
+      console.log("end", arguments);
+    });
+		scrollSpy.update();
+		return () => {
+			Events.scrollEvent.remove('begin');
+			Events.scrollEvent.remove('end');
 		}
+		
+	}, [])
+
+
   return (
-    <nav ref={ref} >
+    <nav ref={ref} spy={true}>
       <div style={{display: "flex"}} className="wrapper flex-cont">
         <span>
           <Link to="/" spy={true} smooth={true}>            
