@@ -20,7 +20,7 @@ nav.sticky {
     width: 100%;
     z-index: 10;
     opacity: 0.7;
-    transition: 0.7s linear;
+    transition: all 0.7s linear;
 }
 
 .nav-links {

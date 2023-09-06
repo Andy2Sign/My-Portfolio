@@ -49,6 +49,19 @@ h3 {
     color: black;
     font-size: 30px;
     border-bottom: 1px solid #E31B6D;
+    animation: color-change 3s infinite;
+}
+
+@keyframes color-change {
+    0% {
+        border-bottom-color: red;
+    }
+    50% {
+        border-bottom-color: orange;
+    }
+    100% {
+        border-bottom-color: yellow;
+    }
 }
 
 .who {
