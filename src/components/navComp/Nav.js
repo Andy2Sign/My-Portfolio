@@ -1,5 +1,5 @@
 import React, { forwardRef, useState, useEffect } from "react";
-import ScrollSpy from "react-ui-scrollspy";
+// import ScrollSpy from "react-ui-scrollspy";
 // import { ReactComponent as Logo } from "../../logo.svg";
 // import logo from "../../logo.svg"
 import { Link } from "react-scroll";
@@ -13,15 +13,19 @@ const Nav = ({ props }, ref) => {
   //     console.log("begin", arguments);
   //   });
 
-  //   Events.scrollEvent.register("end", function () {
-  //     console.log("end", arguments);
-  //   });
-  //   ScrollSpy.update();
-  //   return () => {
-  //     Events.scrollEvent.remove("begin");
-  //     Events.scrollEvent.remove("end");
-  //   };
-  // }, []);
+    // Events.scrollEvent.register("end", function () {
+    //   console.log("end", arguments);
+    // });
+    // ScrollSpy.update();
+    // return () => {
+    //   Events.scrollEvent.remove("begin");
+    //   Events.scrollEvent.remove("end");
+    // };
+  //}, []);
+	window.addEventListener("scroll", function(){
+		let nav = this.document.querySelector("nav");
+		nav.classList.toggle("sticky", this.window.scrollY > 965);
+	})
 
   return (
     <nav ref={ref} spy={true}>
@@ -29,25 +33,25 @@ const Nav = ({ props }, ref) => {
         <span>
           <Link to="/" spy={true} smooth={true}>
             <img src={pic} className="picLogo" />
-          </Link>{" "}
-        </span>{" "}
+          </Link>
+        </span>
         <div>
           <ul className="nav-links">
             <Link to="AboutMe" spy={true} smooth={true}>
-              <li className="links"> AboutMe </li>{" "}
-            </Link>{" "}
+              <li className="links"> AboutMe </li>
+            </Link>
             <Link to="Mission" spy={true} smooth={true}>
-              <li className="links"> Mission </li>{" "}
-            </Link>{" "}
-            <Link to="Services">
-              <li className="links"> Services </li>{" "}
-            </Link>{" "}
-            <Link to="Blog">
-              <li className="links"> Blog </li>{" "}
-            </Link>{" "}
-          </ul>{" "}
-        </div>{" "}
-      </div>{" "}
+              <li className="links"> Mission </li>
+            </Link>
+            <Link to="Services" spy={true} smooth={true}>
+              <li className="links"> Services </li>
+            </Link>
+            <Link to="Blog" spy={true} smooth={true}>
+              <li className="links"> Blog </li>
+            </Link>
+          </ul>
+        </div>
+      </div>
     </nav>
   );
 };
