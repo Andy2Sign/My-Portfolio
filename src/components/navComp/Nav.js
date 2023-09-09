@@ -1,4 +1,4 @@
-import React, { forwardRef, useState, useEffect } from "react";
+import React, { forwardRef } from "react";
 // import ScrollSpy from "react-ui-scrollspy";
 // import { ReactComponent as Logo } from "../../logo.svg";
 // import logo from "../../logo.svg"
@@ -13,19 +13,19 @@ const Nav = ({ props }, ref) => {
   //     console.log("begin", arguments);
   //   });
 
-    // Events.scrollEvent.register("end", function () {
-    //   console.log("end", arguments);
-    // });
-    // ScrollSpy.update();
-    // return () => {
-    //   Events.scrollEvent.remove("begin");
-    //   Events.scrollEvent.remove("end");
-    // };
+  // Events.scrollEvent.register("end", function () {
+  //   console.log("end", arguments);
+  // });
+  // ScrollSpy.update();
+  // return () => {
+  //   Events.scrollEvent.remove("begin");
+  //   Events.scrollEvent.remove("end");
+  // };
   //}, []);
-	window.addEventListener("scroll", function(){
-		let nav = this.document.querySelector("nav");
-		nav.classList.toggle("sticky", this.window.scrollY > 965);
-	})
+  window.addEventListener("scroll", function () {
+    let nav = this.document.querySelector("nav");
+    nav.classList.toggle("sticky", this.window.scrollY > 965);
+  });
 
   return (
     <nav ref={ref} spy={true}>

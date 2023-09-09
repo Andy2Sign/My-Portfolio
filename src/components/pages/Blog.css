@@ -1,0 +1,41 @@
+p {
+    font-size: 30px;
+}
+
+.handleBlog {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bLogo {
+    color: #E31B6D;
+    font-size: 115px;
+    border-bottom: none;
+    animation: change-B 3.5s infinite ease-in-out;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.log {
+    font-size: 105px;
+    color: #1c1c1c;
+}
+
+@keyframes change-B {
+    0% {
+        color: #E31B6D;
+    }
+    50% {
+        color: #ff7cd8;
+    }
+    75% {
+        color: #f8b500;
+    }
+    90% {
+        color: #ff7cd8;
+    }
+    96% {
+        color: #E31B6D;
+    }
+}

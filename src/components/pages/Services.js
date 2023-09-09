@@ -23,7 +23,7 @@ const Services = ({ img1, img2 }) => {
             </ul>
           </div>
           <div className="crsless">
-            <h2> Courses & Lessons </h2>
+            <h2> Academy </h2>
             <span className="span_services">
               <img src={img2} className="img_services" />
             </span>

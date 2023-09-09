@@ -1,0 +1,39 @@
+ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+}
+
+footer {
+    width: 100%;
+    padding: 25px;
+    background: #1c1c1c;
+    border-bottom: 0.5px solid #E31B6D;
+    border-top: 1px solid #E31B6D;
+}
+
+.handleFooter {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.handleFooter li {
+    font-size: 20px;
+    color: whitesmoke;
+    padding: 5px;
+    font-weight: lighter;
+}
+
+.handleFooter li:hover {
+    border-color: #E31B6D;
+    color: #E31B6D;
+    cursor: default;
+    border-bottom: 1px solid whitesmoke;
+    transform: scale(1.1);
+    transition: all .2s linear;
+}
+
+.picBox {
+    width: 150px;
+}

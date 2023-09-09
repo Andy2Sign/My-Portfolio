@@ -49,18 +49,21 @@ h3 {
     color: black;
     font-size: 30px;
     border-bottom: 1px solid #E31B6D;
-    animation: color-change 3s infinite;
+    animation: color-change 3s infinite ease-in-out;
 }
 
 @keyframes color-change {
     0% {
-        border-bottom-color: red;
+        border-bottom-color: #E31B6D;
     }
     50% {
+        border-bottom-color: #ff7cd8;
+    }
+    75% {
         border-bottom-color: orange;
     }
     100% {
-        border-bottom-color: yellow;
+        border-bottom-color: #ff7cd8;
     }
 }
 

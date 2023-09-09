@@ -11,6 +11,7 @@ import {
   Mission,
   Services,
   Blog,
+	Footer
 } from "./components/pages/export";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
@@ -29,24 +30,30 @@ function App() {
       <div className="App">
         <ScrollBtn handleScroll={handleScroll} /> <Welcome />
         <div className="main-container">
-          <Nav ref={ref} />{" "}
+          <Nav ref={ref} />
           {/* <Routes>
                                                                                                                                                                         <Route path="/" element={<AboutMe img={photo}  />} />
                                                                                                                                                             						<Route path="./components/pages/Mission" element={<Mission />} />
                                                                                                                                                                         <Route path="./components/pages/Projects" element={<Services />} />
                                                                                                                                                                         <Route path="./components/pages/Blog" element={<Blog />} />
                                                                                                                                                                       </Routes> */}{" "}
-        </div>{" "}
+        </div>
         <section>
-          <AboutMe img={pic1} />{" "}
-        </section>{" "}
+          <AboutMe img={pic1} />
+        </section>
         <section>
-          <Mission img={pic2} />{" "}
-        </section>{" "}
+          <Mission img={pic2} />
+        </section>
         <section>
-          <Services img1={pic3} img2={pic4} />{" "}
-        </section>{" "}
-      </div>{" "}
+          <Services img1={pic3} img2={pic4} />
+        </section>
+				<section>
+					<Blog/>
+				</section>
+				<section>
+					<Footer/>
+				</section>
+      </div>
     </Router>
   );
 }
