@@ -1,4 +1,4 @@
-import React, { useState, forwardRef } from "react";
+import React, { useState, forwardRef, children } from "react";
 import Button from "../transleBtn/Button";
 // import ScrollSpy from "react-ui-scrollspy";
 // import { ReactComponent as Logo } from "../../logo.svg";
@@ -10,7 +10,7 @@ import "../../App.css";
 // import "../../data/engData";
 // import "../../data/itaData";
 
-const Nav = ({ engData, itaData }, ref) => {
+const Nav = ({ children }, ref) => {
   // useEffect((Events) => {
   //   Events.scrollEvent.register("begin", function () {
   //     console.log("begin", arguments);
@@ -31,18 +31,7 @@ const Nav = ({ engData, itaData }, ref) => {
   });
 
 
-	const [lingua, setLingua] = useState(engData);
-  const [isToggled, setToggle] = useState(false);
-  //const [compo, setCompo] = useState([data2]);
-
-  const handlLanguage = () => {
-    //if(isToggled ==)
-    isToggled == false ? setToggle(true) : setToggle(false);
-    lingua != engData ? setLingua(engData) : setLingua(itaData);
-    //compo != engCompo ? setCompo(engCompo) : setCompo(itaCompo)
-    console.log(isToggled);
-    console.log("Lingua " + lingua);
-  };
+	
 
 
   
@@ -73,10 +62,11 @@ const Nav = ({ engData, itaData }, ref) => {
             </ul>
           </div>
           <span className="flex_wrap flex_btn">
-            <Button
+						{children}
+            {/* <Button
               handlLanguage={handlLanguage}
               content={isToggled ? "ITA" : "ENG"}
-            />
+            /> */}
           </span>
         </section>
       </div>

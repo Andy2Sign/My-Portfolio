@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useState, useRef } from "react";
 import pic1 from "./components/images/Avatar.jpg";
 import pic2 from "./components/images/FinTech.jpeg";
 import pic3 from "./components/images/website_mockup.jpeg";
@@ -12,6 +12,7 @@ import {
   Services,
   Blog,
   Footer,
+	Button
 } from "./components/pages/export";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
@@ -28,15 +29,37 @@ function App() {
     ref.current.scrollIntoView({ behavior: "smooth", top: 0 });
   };
 
+
+	const [lingua, setLingua] = useState(engData);
+  const [isToggled, setToggle] = useState(false);
+  //const [compo, setCompo] = useState([data2]);
+
+  const handlLanguage = () => {
+    //if(isToggled ==)
+    isToggled == false ? setToggle(true) : setToggle(false);
+    lingua != engData ? setLingua(engData) : setLingua(itaData);
+    //compo != engCompo ? setCompo(engCompo) : setCompo(itaCompo)
+    console.log(isToggled);
+    console.log("Lingua " + lingua);
+  };
+
   return (
     <Router>
       <div className="App">
         <ScrollBtn handleScroll={handleScroll} /> <Welcome />
         <div className="main-container">
-          <Nav ref={ref} engData={engData} itaData={itaData}/>
+          <Nav ref={ref} engData={engData} itaData={itaData}>
+						{<Button handlLanguage={handlLanguage}
+              content={isToggled ? "ITA" : "ENG"}/>}
+					</Nav>
         </div>
         <section>
-          <AboutMe img={pic1} title={engData[0].title} />{" "}
+					{
+						lingua.map((el) => {
+							return <AboutMe key={el.id} {...el} img={pic1}/>
+						})
+					}
+          {/* <AboutMe img={pic1}  /> */}
         </section>{" "}
         <section>
           <Mission img={pic2} />{" "}
