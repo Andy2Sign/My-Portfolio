@@ -16,6 +16,7 @@ import {
 } from "./components/pages/export";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
+import "./components/pages/AboutMe.css";
 import engData from "./data/engData";
 import itaData from "./data/itaData";
 
@@ -32,11 +33,19 @@ function App() {
 
   const [lingua, setLingua] = useState(engData);
   const [isToggled, setToggle] = useState(false);
-  //const [compo, setCompo] = useState([data2]);
+	
 
   const handlLanguage = () => {
     //if(isToggled ==)
     isToggled == false ? setToggle(true) : setToggle(false);
+		
+		
+
+	  // if (isToggled){
+	  //  	document.getElementById("animation").className = 'word';
+		// 	//document.getElementById("animation").classList.remove('word');
+		// }
+
     lingua != engData ? setLingua(engData) : setLingua(itaData);
 
     //compo != engCompo ? setCompo(engCompo) : setCompo(itaCompo)
@@ -45,7 +54,29 @@ function App() {
     //let word = document.getElementById("animation");
     //word.classList.toggle("word");
     //console.log("word");
+		setAnime();
+		rmvvAnime();
+		
+		;
+
+	
+  
   };
+
+	
+	function setAnime(){
+
+		document.getElementById("animation").className = 'word';
+	}
+	
+	function rmvvAnime(){
+		setTimeout(() => {
+			document.getElementById("animation").classList.remove('word');
+			
+		}, "1000")
+		
+	}
+// rmvvAnime();
 
   return (
     <Router>

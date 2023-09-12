@@ -119,22 +119,31 @@ ul {
 }
 
 .word {
-    /* animation: switch 3s ease-in-out;
-    animation-delay: 2s; */
-    /*transform: translate(-50%, -50%);*/
-    color: blue;
+    animation: switch 1s ease-in-out;
+    /* animation-delay: 1s; */
+    transition: 0.4s;
+    color: #e31b6d;
 }
 
 @keyframes switch {
-    0%,
-    5%,
-    100% {
-        filter: blur(0px);
+    10% {
+        filter: blur(180px);
         opacity: 1;
     }
-    50%,
+    40% {
+        filter: blur(130px);
+        opacity: 0.5;
+    }
+    40% {
+        filter: blur(90px);
+        opacity: 0;
+    }
     80% {
-        filter: blur(180px);
+        filter: blur(60px);
+        opacity: 0;
+    }
+    100% {
+        filter: blur(0px);
         opacity: 0;
     }
 }

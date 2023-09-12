@@ -7,19 +7,20 @@ const Mission = ({ img, text }) => {
     <div id="Mission">
       <article className="wrapper mission_article">
         <div className=" mission_box-title">
-          <h1> Mission </h1>
-        </div>
+          <h1> Mission </h1>{" "}
+        </div>{" "}
         <div className="flex_wrap handleContent">
           <span className="span-box_img">
             <img src={img} className="img-mission" />
-          </span>
+          </span>{" "}
           <div className="miss_descr">
-            <p className="linebreaker">
-              {text}
-            </p>
-          </div>
-        </div>
-      </article>
+            <p id="animation" className="linebreaker">
+              {" "}
+              {text}{" "}
+            </p>{" "}
+          </div>{" "}
+        </div>{" "}
+      </article>{" "}
     </div>
   );
 };
