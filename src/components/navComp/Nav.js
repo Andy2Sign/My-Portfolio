@@ -1,4 +1,4 @@
-import React, { useState, forwardRef, children } from "react";
+import React, { useState, forwardRef, children, useRef, useEffect } from "react";
 import Button from "../transleBtn/Button";
 // import ScrollSpy from "react-ui-scrollspy";
 // import { ReactComponent as Logo } from "../../logo.svg";
@@ -25,10 +25,23 @@ const Nav = ({ children }, ref) => {
   //   Events.scrollEvent.remove("end");
   // };
   //}, []);
-  window.addEventListener("scroll", function () {
-    let nav = this.document.querySelector("nav");
-    nav.classList.toggle("sticky", this.window.scrollY > 965);
-  });
+
+
+
+
+		window.addEventListener("scroll", function () {
+			let nav = this.document.querySelector("nav")
+			nav.classList.toggle("sticky", this.window.scrollY > 965);
+		});
+
+
+    // setTimeout(() => {
+    //   listElement.current.classList.add("hidden-text");
+    // }, 1000);
+    // return () => {};
+
+
+
 
 
 	

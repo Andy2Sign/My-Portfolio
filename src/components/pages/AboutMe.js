@@ -16,7 +16,7 @@ const AboutMe = ({ img, title, text }) => {
           </span>
           <div className="who">
             <h3>{title}</h3> 
-						<p>{text}</p>
+						<p className="linebreak">{text}</p>
           </div>
         </section>
       </article>

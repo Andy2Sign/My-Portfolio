@@ -1,5 +1,6 @@
 import React from "react";
 import "./Button.css";
+import "../../App.css";
 
 const Button = ({ content, handlLanguage }) => {
   return (

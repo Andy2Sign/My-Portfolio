@@ -12,35 +12,35 @@ import {
   Services,
   Blog,
   Footer,
-	Button
+  Button,
 } from "./components/pages/export";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import engData from "./data/engData";
-import itaData from './data/itaData';
-
+import itaData from "./data/itaData";
 
 function App() {
   const ref = useRef(null);
   const handleScroll = () => {
+		//ref.current.classList.add("sticky")
     if (!ref || !ref.current) {
       return;
     }
+	
     ref.current.scrollIntoView({ behavior: "smooth", top: 0 });
   };
 
-
-	const [lingua, setLingua] = useState(engData);
+  const [lingua, setLingua] = useState(engData);
   const [isToggled, setToggle] = useState(false);
   //const [compo, setCompo] = useState([data2]);
+
 
   const handlLanguage = () => {
     //if(isToggled ==)
     isToggled == false ? setToggle(true) : setToggle(false);
     lingua != engData ? setLingua(engData) : setLingua(itaData);
     //compo != engCompo ? setCompo(engCompo) : setCompo(itaCompo)
-    console.log(isToggled);
-    console.log("Lingua " + lingua);
+
   };
 
   return (
@@ -49,20 +49,23 @@ function App() {
         <ScrollBtn handleScroll={handleScroll} /> <Welcome />
         <div className="main-container">
           <Nav ref={ref} engData={engData} itaData={itaData}>
-						{<Button handlLanguage={handlLanguage}
-              content={isToggled ? "ITA" : "ENG"}/>}
-					</Nav>
+            {
+              <Button
+                handlLanguage={handlLanguage}
+                content={isToggled ? "ENG" : "ITA"}
+              />
+            }
+          </Nav>
         </div>
         <section>
-					{
-						lingua.map((el) => {
-							return <AboutMe key={el.id} {...el} img={pic1}/>
-						})
-					}
-          {/* <AboutMe img={pic1}  /> */}
+          {lingua[0].map((el) => {
+            return <AboutMe key={el.id} {...el} img={pic1} />;
+          })}
         </section>{" "}
         <section>
-          <Mission img={pic2} />{" "}
+					{lingua[1].map((el) => {
+            return <Mission key={el.id} img={pic2} {...el} />;
+          })}
         </section>{" "}
         <section>
           <Services img1={pic3} img2={pic4} />{" "}
