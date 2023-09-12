@@ -2,7 +2,7 @@ let engData = [{
         id: 1,
         //img: "https://media.istockphoto.com/id/1160791767/it/foto/cavallo-che-ride.jpg?b=1&s=170667a&w=0&k=20&c=pdXu_JNb1_RFsmqBqw__rrfbQY3sgOCKATmE03cFrNA=",
         title: "Who's This guy",
-        text: "Passionate Software Engineer JavaScript Developer & Business IT Specialist Development and Maintenance of Avaloq Core Banking Development of user - friendly and interactive web pages"
+        text: "Hi my name is Andrea Passionate Software Engineer + JavaScript Developer & Business IT Specialist + + Development and Maintenance of Avaloq Core Banking +  + Development of user - friendly and interactive web pages"
     }
     // {
     //     id: 2,
