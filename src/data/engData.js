@@ -36,8 +36,8 @@ let engData = [
     [{
         id: 1,
         //img: "https://media.istockphoto.com/id/1160791767/it/foto/cavallo-che-ride.jpg?b=1&s=170667a&w=0&k=20&c=pdXu_JNb1_RFsmqBqw__rrfbQY3sgOCKATmE03cFrNA=",
-        title: "Who's This guy",
-        text: 'Hi, my name is Andrea \n Frontend Developer \n Development of user - friendly and interactive web pages'
+        title: "Hey, my name is Andrea ",
+        text: 'Frontend Developer \n Development of user-friendly and interactive web pages'
     }],
     [{
         id: 2,
@@ -45,7 +45,7 @@ let engData = [
         //title: "Scimmia Pazza",
         text: 'The purpose of this page is to offer no standardized solutions for your services \n Development of webpages to mach your needs , \n ' +
             'Attention to details and reach the target of our client is our mantra \n ' +
-            'We offer Development academy for beginned or for expert with willingness to improve'
+            'We offer Development academy to beginners and to expert with willingness to improve theirs skills'
     }]
 ];
 // {

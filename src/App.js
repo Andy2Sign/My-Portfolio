@@ -22,11 +22,11 @@ import itaData from "./data/itaData";
 function App() {
   const ref = useRef(null);
   const handleScroll = () => {
-		//ref.current.classList.add("sticky")
+    //ref.current.classList.add("sticky")
     if (!ref || !ref.current) {
       return;
     }
-	
+
     ref.current.scrollIntoView({ behavior: "smooth", top: 0 });
   };
 
@@ -34,13 +34,17 @@ function App() {
   const [isToggled, setToggle] = useState(false);
   //const [compo, setCompo] = useState([data2]);
 
-
   const handlLanguage = () => {
     //if(isToggled ==)
     isToggled == false ? setToggle(true) : setToggle(false);
     lingua != engData ? setLingua(engData) : setLingua(itaData);
+
     //compo != engCompo ? setCompo(engCompo) : setCompo(itaCompo)
 
+		//document.getElementById('animation').style.animation = "switch 3s ease-in-out";
+    //let word = document.getElementById("animation");
+    //word.classList.toggle("word");
+    //console.log("word");
   };
 
   return (
@@ -63,7 +67,7 @@ function App() {
           })}
         </section>{" "}
         <section>
-					{lingua[1].map((el) => {
+          {lingua[1].map((el) => {
             return <Mission key={el.id} img={pic2} {...el} />;
           })}
         </section>{" "}

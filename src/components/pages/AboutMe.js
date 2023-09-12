@@ -15,8 +15,8 @@ const AboutMe = ({ img, title, text }) => {
             <img src={img} alt={"Andrea"} />
           </span>
           <div className="who">
-            <h3>{title}</h3> 
-						<p className="linebreak">{text}</p>
+            <h3 id="animation" >{title}</h3> 
+						<p id="animation" className="linebreak ">{text}</p>
           </div>
         </section>
       </article>
