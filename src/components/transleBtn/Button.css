@@ -1,6 +1,9 @@
 button {
     width: 30px;
     height: 30px;
+    padding: 10px;
     background-color: #1c1c1c;
     color: whitesmoke;
+    border-style: none;
+    font-weight: bolder;
 }

@@ -3,7 +3,9 @@ let itaData = [
         id: 1,
         //img: "https://media.istockphoto.com/id/1160791767/it/foto/cavallo-che-ride.jpg?b=1&s=170667a&w=0&k=20&c=pdXu_JNb1_RFsmqBqw__rrfbQY3sgOCKATmE03cFrNA=",
         title: "Hey, il mio nome è Andrea ",
-        text: 'Frontend Developer \n Sviluppatore di user-friendly ed interattive web-pages \n'
+        text: 'Frontend Developer \n Sviluppatore di user-friendly ed interattive web-pages \n ' +
+            'Specialista JavaScript, UI UX architetto \n ' +
+            'Trasformare idee in prodotti reali è il mio obiettivo... e quello che amo fare'
     }],
     [{
         id: 2,

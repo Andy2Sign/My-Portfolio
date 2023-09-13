@@ -12,17 +12,18 @@ const Mission = ({ img, text }) => {
         <div className="flex_wrap handleContent">
           <span className="span-box_img">
             <img src={img} className="img-mission" />
-          </span>{" "}
+          </span>
           <div className="miss_descr">
-            <p id="animation" className="linebreaker">
-              {" "}
-              {text}{" "}
-            </p>{" "}
-          </div>{" "}
+            <span id="animation2">
+              <p>{text}</p>
+            </span>
+          </div>
         </div>{" "}
       </article>{" "}
     </div>
   );
 };
+
+//
 
 export default Mission;

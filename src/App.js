@@ -14,9 +14,10 @@ import {
   Footer,
   Button,
 } from "./components/pages/export";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import "./App.css";
 import "./components/pages/AboutMe.css";
+import "./components/pages/Mission.css";
 import engData from "./data/engData";
 import itaData from "./data/itaData";
 
@@ -33,50 +34,30 @@ function App() {
 
   const [lingua, setLingua] = useState(engData);
   const [isToggled, setToggle] = useState(false);
-	
 
   const handlLanguage = () => {
-    //if(isToggled ==)
-    isToggled == false ? setToggle(true) : setToggle(false);
-		
-		
+    setAnime();
+    setTimeout(() => {
+      isToggled == false ? setToggle(true) : setToggle(false);
+      lingua != engData ? setLingua(engData) : setLingua(itaData);
+    }, 500);
 
-	  // if (isToggled){
-	  //  	document.getElementById("animation").className = 'word';
-		// 	//document.getElementById("animation").classList.remove('word');
-		// }
-
-    lingua != engData ? setLingua(engData) : setLingua(itaData);
-
-    //compo != engCompo ? setCompo(engCompo) : setCompo(itaCompo)
-
-		//document.getElementById('animation').style.animation = "switch 3s ease-in-out";
-    //let word = document.getElementById("animation");
-    //word.classList.toggle("word");
-    //console.log("word");
-		setAnime();
-		rmvvAnime();
-		
-		;
-
-	
-  
+    rmvvAnime();
   };
 
-	
-	function setAnime(){
+  function setAnime() {
+    document.getElementById("animation").className = "word";
+		document.getElementById("animation2").className = "word";
+  }
 
-		document.getElementById("animation").className = 'word';
-	}
-	
-	function rmvvAnime(){
-		setTimeout(() => {
-			document.getElementById("animation").classList.remove('word');
-			
-		}, "1000")
-		
-	}
-// rmvvAnime();
+
+
+  function rmvvAnime() {
+    setTimeout(() => {
+      document.getElementById("animation").classList.remove("word");
+			document.getElementById("animation2").classList.remove("word");
+    }, "1000");
+  }
 
   return (
     <Router>
