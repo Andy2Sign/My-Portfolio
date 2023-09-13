@@ -3,6 +3,8 @@ import React from "react";
 import "./AboutMe.css";
 import "../../App.css";
 //import GitHubIcon from "@mui/icons-material/GitHub";
+//import { FaBeer } from "@react-icons/all-files/fa/FaBeer";
+
 
 const AboutMe = ({ img, title, text }) => {
   return (
@@ -17,9 +19,9 @@ const AboutMe = ({ img, title, text }) => {
           </span>{" "}
           <div className="who">
             <span id="animation">
-              <h2> {title} </h2> <p> {text} </p>{" "}
+              <h2> {title} </h2> 
+							<p> {text} </p>
             </span>
-            
           </div>{" "}
         </section>{" "}
       </article>{" "}
