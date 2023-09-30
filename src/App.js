@@ -20,6 +20,7 @@ import "./components/pages/AboutMe.css";
 import "./components/pages/Mission.css";
 import engData from "./data/engData";
 import itaData from "./data/itaData";
+import MissionIcon from './components/pages/missionIcon/MissionIcon'
 
 function App() {
   const ref = useRef(null);
@@ -80,7 +81,7 @@ function App() {
         </section>{" "}
         <section>
           {lingua[1].map((el) => {
-            return <Mission key={el.id} img={pic2} {...el} />;
+            return <Mission key={el.id} img={pic2} {...el} children={<MissionIcon/>}/>;
           })}
         </section>{" "}
         <section>

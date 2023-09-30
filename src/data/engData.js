@@ -44,9 +44,9 @@ let engData = [
         id: 2,
         //img: "https://c8.alamy.com/compit/c57ptc/immagine-divertente-di-un-giovane-gorilla-bloccata-il-suo-dito-medio-c57ptc.jpg",
         //title: "Scimmia Pazza",
-        text: 'The purpose of this page is to offer no standardized solutions for your services \n Development of webpages to mach your needs , \n ' +
-            'Attention to details and reach the target of our client is our mantra ' +
-            'We offer Development academy to beginners and to expert with willingness to improve theirs skills'
+        text: 'No standardized solutions for your services \n Development of webpages to mach your needs , \n ' +
+            'Attention to details and reach the client target is my mantra. \n ' +
+            'I offer web-development courses aimed at beginners, those who want to deal with programming for the first time, and experts with a desire to get even better.'
     }]
 ];
 // {
