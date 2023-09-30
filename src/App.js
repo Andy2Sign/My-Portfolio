@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import pic1 from "./components/images/Avatar.jpg";
 import pic2 from "./components/images/FinTech.jpeg";
 import pic3 from "./components/images/website_mockup.jpeg";
@@ -21,6 +21,7 @@ import "./components/pages/Mission.css";
 import engData from "./data/engData";
 import itaData from "./data/itaData";
 import MissionIcon from './components/pages/missionIcon/MissionIcon'
+import ThemeBtn from "./components/toggleTheme/ThemeBtn";
 
 function App() {
   const ref = useRef(null);
@@ -50,19 +51,28 @@ function App() {
     document.getElementById("animation").className = "word";
 		document.getElementById("animation2").className = "word";
   }
-
-
-
-  function rmvvAnime() {
+	function rmvvAnime() {
     setTimeout(() => {
       document.getElementById("animation").classList.remove("word");
 			document.getElementById("animation2").classList.remove("word");
     }, "1000");
   }
 
+	const [isDark, setDark] = useState(false);
+
+	const switchTheme = () => {
+		isDark == false ? setDark('dark-mode') : setDark(false);
+		console.log('click')
+	}
+
+	useEffect(() => {
+	document.documentElement.className = isDark;
+	}, [isDark])
+
   return (
     <Router>
       <div className="App">
+				<div className="bodyTheme">
         <ScrollBtn handleScroll={handleScroll} /> <Welcome />
         <div className="main-container">
           <Nav ref={ref} engData={engData} itaData={itaData}>
@@ -72,6 +82,9 @@ function App() {
                 content={isToggled ? "ENG" : "ITA"}
               />
             }
+						{
+						  <ThemeBtn switchTheme={switchTheme}/>	
+						}
           </Nav>
         </div>
         <section>
@@ -93,6 +106,7 @@ function App() {
         <section>
           <Footer />
         </section>{" "}
+				</div>
       </div>{" "}
     </Router>
   );

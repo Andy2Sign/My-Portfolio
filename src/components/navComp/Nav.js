@@ -1,5 +1,5 @@
-import React, { useState, forwardRef, children, useRef, useEffect } from "react";
-import Button from "../transleBtn/Button";
+import React, {forwardRef } from "react";
+
 // import ScrollSpy from "react-ui-scrollspy";
 // import { ReactComponent as Logo } from "../../logo.svg";
 // import logo from "../../logo.svg"
@@ -10,21 +10,7 @@ import "../../App.css";
 // import "../../data/engData";
 // import "../../data/itaData";
 
-const Nav = ({ children }, ref) => {
-  // useEffect((Events) => {
-  //   Events.scrollEvent.register("begin", function () {
-  //     console.log("begin", arguments);
-  //   });
-
-  // Events.scrollEvent.register("end", function () {
-  //   console.log("end", arguments);
-  // });
-  // ScrollSpy.update();
-  // return () => {
-  //   Events.scrollEvent.remove("begin");
-  //   Events.scrollEvent.remove("end");
-  // };
-  //}, []);
+const Nav = ({ children, children1 }, ref) => {
 
 
 
@@ -32,22 +18,7 @@ const Nav = ({ children }, ref) => {
 		window.addEventListener("scroll", function () {
 			let nav = this.document.querySelector("nav")
 			nav.classList.toggle("sticky", this.window.scrollY > 965);
-		});
-
-
-    // setTimeout(() => {
-    //   listElement.current.classList.add("hidden-text");
-    // }, 1000);
-    // return () => {};
-
-
-
-
-
-	
-
-
-  
+		});  
 
   return (
     <nav ref={ref} spy={true}>
@@ -76,6 +47,7 @@ const Nav = ({ children }, ref) => {
           </div>
           <span className="flex_wrap flex_btn">
 						{children}
+						{children1}
             {/* <Button
               handlLanguage={handlLanguage}
               content={isToggled ? "ITA" : "ENG"}

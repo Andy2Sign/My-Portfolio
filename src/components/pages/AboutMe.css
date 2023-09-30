@@ -44,14 +44,6 @@ article {
     font-weight: lighter; 
 } */
 
-h2 {
-    font-weight: lighter;
-    /* color: #1c1c1c; */
-    font-size: 45px;
-    border-bottom: 1px solid #E31B6D;
-    animation: color-change 3s infinite ease-in-out;
-}
-
 @keyframes color-change {
     0% {
         border-bottom-color: #E31B6D;
@@ -75,11 +67,12 @@ h2 {
     padding-left: 60px;
 }
 
-.who p {
+
+/* .who p {
     font-size: 25px;
     white-space: pre-line;
     color: #1c1c1c;
-}
+} */
 
 img {
     width: 100%;

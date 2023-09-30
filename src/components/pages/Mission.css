@@ -6,24 +6,10 @@
     padding-top: 20px;
 }
 
-
-/* .wallpaper{
-	background: url(./images/wallPaper.jpeg) 50% 50% / cover;
-	z-index: -2;
-	padding: 10px;
-} */
-
 .span-box_img {
     width: 500px;
     padding-right: 50px;
 }
-
-
-/* .handleContent {
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px;
-} */
 
 .img-mission {
     width: 100%;
@@ -36,8 +22,9 @@
     padding-left: 50px;
 }
 
-.miss_descr p {
+
+/* .miss_descr p {
     font-size: 25px;
     white-space: pre-line;
     color: #1c1c1c;
-}
+} */
