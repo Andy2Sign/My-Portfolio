@@ -52,6 +52,6 @@ ul {
     padding-left: 100px;
 }
 
-h2 {
-    color: #1c1c1c;
+.h2-services_title {
+    font-size: 30px;
 }

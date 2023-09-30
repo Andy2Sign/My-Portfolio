@@ -46,8 +46,8 @@ article {
 
 h2 {
     font-weight: lighter;
-    color: #1c1c1c;
-    font-size: 30px;
+    /* color: #1c1c1c; */
+    font-size: 45px;
     border-bottom: 1px solid #E31B6D;
     animation: color-change 3s infinite ease-in-out;
 }

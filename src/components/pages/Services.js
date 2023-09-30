@@ -11,7 +11,7 @@ const Services = ({ img1, img2 }) => {
         </div>
         <div className="flex_wrap handleContent">
           <div className="wbsdev">
-            <h2> Web Design & App Development </h2>
+            <h2 className="h2-services_title"> Web Design & App Development </h2>
             <span className="span_services">
               <img src={img1} className="img_services" />
             </span>
@@ -23,7 +23,7 @@ const Services = ({ img1, img2 }) => {
             </ul>
           </div>
           <div className="crsless">
-            <h2> Academy </h2>
+            <h2 className="h2-services_title"> Academy </h2>
             <span className="span_services">
               <img src={img2} className="img_services" />
             </span>
