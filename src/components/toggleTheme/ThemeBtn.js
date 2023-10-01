@@ -5,8 +5,8 @@ const ThemeBtn = ({ switchTheme }) => {
   return (
     <div className="main-box">
 			<div className="toggle">
-       <span className="notch">
-			 </span>
+       <div className="notch">
+			 </div>
 			</div>
       {/* <button onClick={switchTheme}>Switch</button> */}
     </div>
