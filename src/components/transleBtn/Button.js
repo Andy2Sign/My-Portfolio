@@ -10,7 +10,7 @@ const Button = ({ content, handlLanguage }) => {
 	
   return (
     <div>
-      <button id="btn" onClick={handlLanguage}> {content} </button>
+      <button className="button" id="btn" onClick={handlLanguage}> {content} </button>
     </div>
   );
 };

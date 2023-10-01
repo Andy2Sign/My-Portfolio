@@ -22,6 +22,7 @@ import engData from "./data/engData";
 import itaData from "./data/itaData";
 import MissionIcon from './components/pages/missionIcon/MissionIcon'
 import ThemeBtn from "./components/toggleTheme/ThemeBtn";
+import ReactCountryFlag from "react-country-flag"
 
 function App() {
   const ref = useRef(null);
@@ -35,12 +36,12 @@ function App() {
   };
 
   const [lingua, setLingua] = useState(engData);
-  const [isToggled, setToggle] = useState('ita');
+  const [isToggled, setToggle] = useState(false);
 
   const handlLanguage = () => {
     setAnime();
     setTimeout(() => {
-      isToggled == 'ita' ? setToggle('eng') : setToggle('ita');
+      isToggled == false ? setToggle(true) : setToggle(false);
       lingua != engData ? setLingua(engData) : setLingua(itaData);
     }, 500);
 
@@ -83,7 +84,7 @@ function App() {
             {
               <Button
                 handlLanguage={handlLanguage}
-                //content={isToggled ? 'eng' : "ita"}
+                content={isToggled ? "ENG" : "ITA"}
               />
             }
 						{

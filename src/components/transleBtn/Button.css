@@ -1,4 +1,4 @@
-button {
+.button {
     width: auto;
     height: 30px;
     padding: 10px;
@@ -9,8 +9,8 @@ button {
     font-weight: bolder;
 }
 
-.ita button {
-    background-image: url(../images/itaFlag.png);
+.ita .button {
+    background: url(../images/itaFlag.png);
 }
 
 .eng button {
