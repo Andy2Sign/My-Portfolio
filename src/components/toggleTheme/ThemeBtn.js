@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import "./ThemeBtn.css";
 
 const ThemeBtn = ({switchTheme}) => {
 	return (
-		<div>
+		<div className='main-box'>
 			<button onClick={switchTheme}>
 				Switch
 			</button>

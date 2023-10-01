@@ -17,6 +17,10 @@ ul {
     border-bottom: 0.5px solid #E31B6D;
 }
 
+.dark-mode li {
+    color: whitesmoke;
+}
+
 .span_services {
     width: 500px;
     padding: 20px;

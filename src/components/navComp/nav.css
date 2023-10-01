@@ -32,7 +32,7 @@ nav.sticky {
 
 .links {
     padding: 22px;
-    font-size: 20px;
+    font-size: 22px;
     color: whitesmoke;
     font-weight: lighter;
 }
@@ -48,4 +48,5 @@ nav.sticky {
 
 .flex_btn {
     align-items: center;
+    margin-left: 5px;
 }

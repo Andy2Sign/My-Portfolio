@@ -35,12 +35,12 @@ function App() {
   };
 
   const [lingua, setLingua] = useState(engData);
-  const [isToggled, setToggle] = useState(false);
+  const [isToggled, setToggle] = useState('ita');
 
   const handlLanguage = () => {
     setAnime();
     setTimeout(() => {
-      isToggled == false ? setToggle(true) : setToggle(false);
+      isToggled == 'ita' ? setToggle('eng') : setToggle('ita');
       lingua != engData ? setLingua(engData) : setLingua(itaData);
     }, 500);
 
@@ -69,6 +69,10 @@ function App() {
 	document.documentElement.className = isDark;
 	}, [isDark])
 
+	// useEffect(() => {
+	// document.documentElement.className = isToggled;
+	// }, [isToggled])
+
   return (
     <Router>
       <div className="App">
@@ -79,7 +83,7 @@ function App() {
             {
               <Button
                 handlLanguage={handlLanguage}
-                content={isToggled ? "ENG" : "ITA"}
+                //content={isToggled ? 'eng' : "ita"}
               />
             }
 						{
