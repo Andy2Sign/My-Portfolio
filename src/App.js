@@ -63,6 +63,7 @@ function App() {
 
 	const switchTheme = () => {
 		isDark == false ? setDark('dark-mode') : setDark(false);
+		toggled == false ? setToggled('dark-mode') : setToggled(false);
 		console.log('click')
 	}
 
@@ -70,9 +71,7 @@ function App() {
 	document.documentElement.className = isDark;
 	}, [isDark])
 
-	// useEffect(() => {
-	// document.documentElement.className = isToggled;
-	// }, [isToggled])
+	const [toggled, setToggled] = useState(false);
 
   return (
     <Router>
@@ -88,7 +87,7 @@ function App() {
               />
             }
 						{
-						  <ThemeBtn switchTheme={switchTheme}/>	
+						  <ThemeBtn switchTheme={switchTheme} toggled={toggled}/>	
 						}
           </Nav>
         </div>
