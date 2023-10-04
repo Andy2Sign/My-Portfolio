@@ -1,25 +1,4 @@
-.button {
-    /* width: auto;
-    height: 30px;
-    padding: 10px; */
-    margin-right: 7px;
-    /* background-color: #1c1c1c; */
-    color: whitesmoke;
-    /* border-style: none;
-    font-weight: bolder; */
-}
-
-.button .ita {
-    background: url(../images/itaFlag.png);
-}
-
 .img {
     height: 18px;
     width: auto;
 }
-
-
-/* 
-.button .eng {
-    background-image: url(../images/english.jpeg);
-} */

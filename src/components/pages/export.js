@@ -12,3 +12,5 @@ export { default as Footer }
 from "../footerComp/Footer";
 export { default as Button }
 from "../transleBtn/Button";
+export { default as ThemeBtn }
+from "../toggleTheme/ThemeBtn"

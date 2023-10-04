@@ -1,24 +1,15 @@
-import React, {forwardRef } from "react";
-
-// import ScrollSpy from "react-ui-scrollspy";
-// import { ReactComponent as Logo } from "../../logo.svg";
-// import logo from "../../logo.svg"
+import React, { forwardRef, useState } from "react";
 import { Link } from "react-scroll";
 import pic from "../../pic.png";
 import "./nav.css";
 import "../../App.css";
-// import "../../data/engData";
-// import "../../data/itaData";
 
 const Nav = ({ children, children1 }, ref) => {
+  window.addEventListener("scroll", function () {
+    let nav = this.document.querySelector("nav");
+    nav.classList.toggle("sticky", this.window.scrollY > 965);
+  });
 
-
-
-
-		window.addEventListener("scroll", function () {
-			let nav = this.document.querySelector("nav")
-			nav.classList.toggle("sticky", this.window.scrollY > 965);
-		});  
 
   return (
     <nav ref={ref} spy={true}>
@@ -46,8 +37,8 @@ const Nav = ({ children, children1 }, ref) => {
             </ul>
           </div>
           <span className="flex_wrap flex_btn">
-						{children}
-						{children1}
+            {children}
+            {children1}
             {/* <Button
               handlLanguage={handlLan
 								sguage}

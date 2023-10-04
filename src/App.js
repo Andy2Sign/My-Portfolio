@@ -3,6 +3,9 @@ import pic1 from "./components/images/Avatar.jpg";
 import pic2 from "./components/images/FinTech.jpeg";
 import pic3 from "./components/images/website_mockup.jpeg";
 import pic4 from "./components/images/courses&lessons.png";
+import MissionIcon from './components/pages/missionIcon/MissionIcon';
+import engFlag from './components/images/english.jpeg';
+import itaFlag from './components/images/itaFlag.png';
 import Welcome from "./Welcome";
 import ScrollBtn from "./ScrollBtn";
 import {
@@ -13,6 +16,7 @@ import {
   Blog,
   Footer,
   Button,
+	ThemeBtn
 } from "./components/pages/export";
 import { BrowserRouter as Router } from "react-router-dom";
 import "./App.css";
@@ -20,11 +24,7 @@ import "./components/pages/AboutMe.css";
 import "./components/pages/Mission.css";
 import engData from "./data/engData";
 import itaData from "./data/itaData";
-import MissionIcon from './components/pages/missionIcon/MissionIcon'
-import ThemeBtn from "./components/toggleTheme/ThemeBtn";
-import engFlag from './components/images/english.jpeg';
-import itaFlag from './components/images/itaFlag.png';
-import ReactCountryFlag from "react-country-flag"
+
 
 function App() {
   const ref = useRef(null);
@@ -43,7 +43,7 @@ function App() {
   const handlLanguage = () => {
     setAnime();
     setTimeout(() => {
-      isToggled == false ? setToggle(true) : setToggle(false);
+      !isToggled ? setToggle(true) : setToggle(false);
       lingua != engData ? setLingua(engData) : setLingua(itaData);
     }, 500);
 
@@ -64,8 +64,8 @@ function App() {
 	const [isDark, setDark] = useState(false);
 
 	const switchTheme = () => {
-		isDark == false ? setDark('dark-mode') : setDark(false);
-		toggled == false ? setToggled('dark-mode') : setToggled(false);
+		!isDark ? setDark('dark-mode') : setDark(false);
+		!toggled ? setToggled('dark-mode') : setToggled(false);
 		console.log('click')
 	}
 

@@ -13,6 +13,11 @@ nav {
     border-top: 1px solid #E31B6D;
 }
 
+nav.sideBar {
+    width: 300px;
+    height: 100%;
+}
+
 nav.sticky {
     /* background: #fff; */
     position: fixed;
