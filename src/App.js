@@ -16,7 +16,8 @@ import {
   Blog,
   Footer,
   Button,
-	ThemeBtn
+	ThemeBtn,
+	BurgerBoughie
 } from "./components/pages/export";
 import { BrowserRouter as Router } from "react-router-dom";
 import "./App.css";
@@ -24,6 +25,7 @@ import "./components/pages/AboutMe.css";
 import "./components/pages/Mission.css";
 import engData from "./data/engData";
 import itaData from "./data/itaData";
+
 
 
 function App() {
@@ -62,6 +64,12 @@ function App() {
   }
 
 	const [isDark, setDark] = useState(false);
+	const [toggled, setToggled] = useState(false);
+	const [isClosed, setIsClosed] = useState(false);
+
+	const burgerMove = () =>{
+	  setIsClosed(!isClosed);
+	}
 
 	const switchTheme = () => {
 		!isDark ? setDark('dark-mode') : setDark(false);
@@ -73,7 +81,6 @@ function App() {
 	document.documentElement.className = isDark;
 	}, [isDark])
 
-	const [toggled, setToggled] = useState(false);
 
   return (
     <Router>
@@ -90,6 +97,9 @@ function App() {
             }
 						{
 						  <ThemeBtn switchTheme={switchTheme} toggled={toggled}/>	
+						}
+						{
+							<BurgerBoughie/>
 						}
           </Nav>
         </div>

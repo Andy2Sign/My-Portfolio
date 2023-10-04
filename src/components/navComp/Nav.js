@@ -4,7 +4,7 @@ import pic from "../../pic.png";
 import "./nav.css";
 import "../../App.css";
 
-const Nav = ({ children, children1 }, ref) => {
+const Nav = ({ children, children1, children2 }, ref) => {
   window.addEventListener("scroll", function () {
     let nav = this.document.querySelector("nav");
     nav.classList.toggle("sticky", this.window.scrollY > 965);
@@ -39,11 +39,7 @@ const Nav = ({ children, children1 }, ref) => {
           <span className="flex_wrap flex_btn">
             {children}
             {children1}
-            {/* <Button
-              handlLanguage={handlLan
-								sguage}
-              content={isToggled ? "ITA" : "ENG"}
-            /> */}
+						{children2}
           </span>
         </section>
       </div>

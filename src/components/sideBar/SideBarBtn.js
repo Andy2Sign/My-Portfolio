@@ -2,9 +2,9 @@ import React, { useState } from "react";
 
 
 
-const [isSide, setSidebar] = useState(false);
 
 const handleSideBar = () => {
+	const [isSide, setSidebar] = useState(false);
 	!isSide ? setSidebar(console.log("click")) : setSidebar(false);
 }
 
@@ -17,3 +17,6 @@ const SideBarBtn = () => {
 }
 
 export default SideBarBtn;
+
+
+
