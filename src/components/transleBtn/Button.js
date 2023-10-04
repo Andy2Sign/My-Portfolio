@@ -1,16 +1,16 @@
 import React from "react";
 import "./Button.css";
-import "../../App.css";
-import AboutMe from "../pages/AboutMe";
+import "../../App.css"
 import "../pages/AboutMe.css"
-import { click } from "@testing-library/user-event/dist/click";
 
-const Button = ({ content, handlLanguage }) => {
 
+const Button = ({ content, handlLanguage, flag }) => {
 	
   return (
     <div>
-      <button className="button" id="btn" onClick={handlLanguage}> {content} </button>
+      <div className="button" id="btn" onClick={handlLanguage}>
+			<img className="img" src={flag}/>
+			</div>
     </div>
   );
 };

@@ -41,6 +41,11 @@
     border-radius: 50%;
 }
 
+.dark-mode .shape {
+    background: lightgray;
+    box-shadow: 0 0 4px 1px violet;
+}
+
 .dark-mode .shape.md {
     transform: translate(-21px, 0px);
     transition: all 0.3s ease-in-out;

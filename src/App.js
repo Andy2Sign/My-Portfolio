@@ -22,6 +22,8 @@ import engData from "./data/engData";
 import itaData from "./data/itaData";
 import MissionIcon from './components/pages/missionIcon/MissionIcon'
 import ThemeBtn from "./components/toggleTheme/ThemeBtn";
+import engFlag from './components/images/english.jpeg';
+import itaFlag from './components/images/itaFlag.png';
 import ReactCountryFlag from "react-country-flag"
 
 function App() {
@@ -83,7 +85,7 @@ function App() {
             {
               <Button
                 handlLanguage={handlLanguage}
-                content={isToggled ? "ENG" : "ITA"}
+                flag={isToggled ?  engFlag: itaFlag}
               />
             }
 						{

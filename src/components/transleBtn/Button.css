@@ -1,18 +1,25 @@
 .button {
-    width: auto;
+    /* width: auto;
     height: 30px;
-    padding: 10px;
+    padding: 10px; */
     margin-right: 7px;
-    background-color: #1c1c1c;
+    /* background-color: #1c1c1c; */
     color: whitesmoke;
-    border-style: none;
-    font-weight: bolder;
+    /* border-style: none;
+    font-weight: bolder; */
 }
 
-.ita .button {
+.button .ita {
     background: url(../images/itaFlag.png);
 }
 
-.eng button {
-    background-image: url(../images/english.jpeg);
+.img {
+    height: 18px;
+    width: auto;
 }
+
+
+/* 
+.button .eng {
+    background-image: url(../images/english.jpeg);
+} */
